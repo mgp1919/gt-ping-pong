@@ -42,9 +42,11 @@ function alert(id) {
   if (person == null || person == "") {
     txt = "None";
   } else {
-    document.getElementById(id).innerHTML = txt; 
+    display: document.getElementById(id).innerHTML = txt; 
   }
 }
+
+
 
 
 
