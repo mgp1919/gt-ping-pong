@@ -32,8 +32,9 @@ function switchColor(id, bid) {
   (button.innerText == "Open")
 }
 
-function setTime() {
-  document.getElementById().value = getTimeStamp();
+var time = new Date(); 
+function show(id) {
+  document.getElementById(id).value = time;
 }
 
 
