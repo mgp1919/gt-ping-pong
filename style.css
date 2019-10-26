@@ -6,11 +6,11 @@ body {
 }
 
 h1 {
-/*   font-style: bold; */
-/*   font-style: italic; */
-  color: #d4af37;
+  
+  font-style: bold;
+  color: #ffffff;
   position: relative;
-  top: 18px;
+  top: 10px;
   text-align: center;
   height: 100px;
 }
@@ -21,8 +21,9 @@ table,th,td {
 
 th {
   padding: 15px;
-  text-align: left;
+  text-align: center;
   height: 50px;
+  color:#ffffff;
 }
 td{
   height: 50px;
@@ -38,7 +39,4 @@ table {
   margin-right: auto;
 }
 
-.header{
-  background-image: url("https://ak8.picdn.net/shutterstock/videos/14597038/thumb/1.jpg?i10c=img.resize(height:160)")
-}
 
