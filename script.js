@@ -7,9 +7,9 @@ function setButtonColor(_this) {
   _this.style.backgroundColor = "red";
 }
 
-function changeButtonColor("") {
+function changeColor(newColor) {
   var elem = document.getElementById('id1');
-  elem.style.color = "red";
+  elem.style.backgroundColor = "red";
 }
 
   
