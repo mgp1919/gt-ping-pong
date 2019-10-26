@@ -17,29 +17,30 @@ function changeColor2(newColor, id) {
   elem.style.backgroundColor = "green";
 }
 
-function switchColor(id, bid) {
+function switchColor(id, bid, id2) {
   var elem = document.getElementById(id);
   var button = document.getElementById(bid);
   if (elem.style.backgroundColor == "red") {
-    button.innerText = "Open";
+    button.innerText = "Claim";
     elem.style.backgroundColor = "green";
-    setTime()
+    
   } else {
     button.innerText = "Closed";
     elem.style.backgroundColor = "red";
-    document.getElementById('date_and_time').innerHTML= new Date().toLocaleTimeString();
   }
   
   var button = document.getElementById(bid);
-  (button.innerText == "Open")
+  (button.innerText == "Claim")
 }
 
 function setTime(id) {
+  if(document.getElement(id).button.innerText.equals("Claim"))
   document.getElementById(id).innerHTML = new Date().toLocaleTimeString();
+  else {
+    document.getElementById(id).innerHTML = null;
+  }
 }
-function closeTime(id) {
-  document.getElementById(id).innerHTML = null;
-}
+
 
 
 
