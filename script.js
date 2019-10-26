@@ -34,6 +34,11 @@ function switchColor(id, bid, id2) {
   (button.innerText == "Claim")
 }
 
+function getPlayerName('id1', 'b1', 'dt1'){
+  var elem = document.getElementById(id);
+  var name = prompt();
+  
+}
 
 
 

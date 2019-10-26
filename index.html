@@ -26,8 +26,8 @@
     </div>
   </head>  
   <body>
-    <table id = "table">
-      <tr>
+    <table class = "w3-striped w3-hoverable" id = "table">
+      <tr class="w3-blue">
         <th>Location</th>
         <th id>Status</th>
         <th id>Time Taken</th>
@@ -36,16 +36,19 @@
       <tr>
         <td>GT Connector</td>
         <td id = "id1">
-          <button class="w3-button" id = "b1" onclick="switchColor('id1', 'b1', 'dt1'); setTime(id)"> Claim </button>
+          <button class="w3-button w3-round-xxlarge" id = "b1" onclick="switchColor('id1', 'b1', 'dt1'); setTime(id); getPlayerName('id1', 'b1', 'dt1')"> Claim </button>
         </td>
         <td id = "dt1">
+        </td>
+        <td id = "players1">
+          <button id = "players" class = " "
         </td>
       </tr>
     
       <tr>
         <td>CRC</td>
         <td id = "id2">
-          <button class="w3-button" id = "b2" onclick="switchColor('id2', 'b2','dt2');"> Claim </button>
+          <button class="w3-button w3-round-xxlarge" id = "b2" onclick="switchColor('id2', 'b2','dt2');"> Claim </button>
         </td>
         <td id = "dt2">
         </td>
@@ -54,12 +57,12 @@
       <tr>
         <td>Matheson</td>
         <td id = "id3">
-          <button class="w3-button" id = "b3" onclick="switchColor('id3', 'b3','dt3');"> Claim </button>
+          <button class="w3-button w3-round-xxlarge" id = "b3" onclick="switchColor('id3', 'b3','dt3');"> Claim </button>
         </td>
         <td id = "dt3">
         </td>
       </tr>
-      
+  
     </table>
   </body>
 </html>
