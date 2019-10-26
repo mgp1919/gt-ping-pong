@@ -23,27 +23,24 @@ function switchColor(id, bid) {
   if (elem.style.backgroundColor == "red") {
     button.innerText = "Open";
     elem.style.backgroundColor = "green";
+    setTime()
   } else {
     button.innerText = "Closed";
     elem.style.backgroundColor = "red";
+    document.getElementById('date_and_time').innerHTML= new Date().toLocaleTimeString();
   }
   
   var button = document.getElementById(bid);
   (button.innerText == "Open")
 }
 
-function startTimer() {
-    var time = 0;
-    time=time+1;
-    elem1.innerHTML='start in ' + time + ' seconds'; //Update span inner HTML
-    setTimeout(startTimer,1000);
-    console.log(time);
+function setTime(id) {
+  document.getElementById(id).innerHTML = new Date().toLocaleTimeString();
 }
-function setDate() {
-  var now = new Date();
-  document.getElementById('date_and_time').innerHTML= new Date();
-  
+function closeTime(id) {
+  document.getElementById(id).innerHTML = null;
 }
+
 
 
 
