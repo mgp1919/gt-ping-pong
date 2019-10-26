@@ -29,10 +29,14 @@ td{
   height: 50px;
   padding: 20px;
   vertical-align: bottom;
+  text-align: center;
+  width: 200px;
 }
 
 table {
   width = 100%;
+  margin-left: auto; 
+  margin-right: auto;
 }
 
 .header{

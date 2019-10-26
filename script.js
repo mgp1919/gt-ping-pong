@@ -7,13 +7,13 @@ function setButtonColor(_this) {
   _this.style.backgroundColor = "red";
 }
 
-function changeColor1(newColor) {
-  var elem = document.getElementById('id1');
+function changeColor1(newColor, id) {
+  var elem = document.getElementById(id);
   elem.style.backgroundColor = "red";
 }
 
-function changeColor2(newColor) {
-  var elem = document.getElementById('id1');
+function changeColor2(newColor, id) {
+  var elem = document.getElementById(id);
   elem.style.backgroundColor = "green";
 }
 

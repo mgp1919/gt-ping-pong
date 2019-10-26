@@ -27,16 +27,22 @@
     <table id = "table">
       <tr>
         <th>Location</th>
-        <th id = "para">Status</th>
+        <th id>Status</th>
       </tr>
       <tr>
         <td>GT Connector</td>
-        
         <td id = "id1">
-          <button onclick="changeColor1('red');">Taken</button>
-          <button onclick="changeColor2('green');">Open</button>
+          <button onclick="changeColor1('red', 'id1');">Taken</button>
+          <button onclick="changeColor2('green', 'id1');">Open</button>
         </td>
-
+      </tr>
+    
+      <tr>
+        <td>CRC</td>
+        <td id = "id2">
+          <button onclick="changeColor1('red', 'id2');">Taken</button>
+          <button onclick="changeColor2('green', 'id2');">Open</button>
+        </td>
       </tr>
     </table>
   </body>
