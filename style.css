@@ -8,5 +8,12 @@ body {
 h1 {
   font-style: bold;
   font-style: italic;
-  color: #373fff;
+  color: #d4af37;
+  display: inline;
 }
+
+div.image{
+  left: px;
+  
+}
+
