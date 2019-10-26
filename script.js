@@ -34,10 +34,16 @@ function switchColor(id, bid, id2) {
   (button.innerText == "Claim")
 }
 
-function getPlayerName('id1', 'b1', 'dt1'){
-  var elem = document.getElementById(id);
-  var name = prompt();
-  
+
+
+function alert(id) {
+  var txt; 
+  var person = prompt("Please enter your name:", "Mihir Pee");
+  if (person == null || person == "") {
+    txt = "None";
+  } else {
+    document.getElementById(id).innerHTML = txt; 
+  }
 }
 
 
