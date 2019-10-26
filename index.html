@@ -13,10 +13,10 @@
     
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-    <div class="w3-container w3-blue">
+    <div class="w3-container" style="background-color:#B3A369">
       <img style="float: left; margin: 30px 15px 15px 0px;" src="https://cdn.pixabay.com/photo/2014/04/03/11/36/ping-pong-311935_1280.png" width="50" />
       <img style="float: right; margin: 30px 15px 15px 0px;" src="https://cdn.pixabay.com/photo/2014/04/03/11/36/ping-pong-311935_1280.png" width="50" />
-      <h1>GT Ping Pong</h1>
+      <h1 id = "Title">GT Ping Pong</h1>
     </div>
     <div class = "second">
     </div>
@@ -24,10 +24,10 @@
   <body>
     <table width = "100%" class = "w3-striped w3-hoverable" id = "table">
       <tr class="w3-blue">
-        <th align="center" id>Location</th>
-        <th align="center" id>Status</th>
-        <th align="center" id>Time Taken</th>
-        <th align="center" id>Players</th>
+        <th style="text-align:center" id>Location</th>
+        <th style="text-align:center"  id>Status</th>
+        <th style="text-align:center"  id>Time Taken</th>
+        <th style="text-align:center"  id>Players</th>
       </tr>
       <tr>
         <td>GT Connector</td>
@@ -43,20 +43,25 @@
       <tr>
         <td>CRC</td>
         <td id = "id2">
-          <button class="w3-button w3-round-xxlarge" id = "b2" onclick="switchColor('id2', 'b2','dt2');"> Claim </button>
+          <button class="w3-button w3-round-xxlarge" id = "b2" onclick="switchColor('id2', 'b2','dt2', 'players2');"> Claim </button>
         </td>
         <td id = "dt2">
+        </td>
+        <td id = "players2">
         </td>
       </tr>
       
       <tr>
         <td>Matheson</td>
         <td id = "id3">
-          <button class="w3-button w3-round-xxlarge" id = "b3" onclick="switchColor('id3', 'b3','dt3');"> Claim </button>
+          <button class="w3-button w3-round-xxlarge" id = "b3" onclick="switchColor('id3', 'b3','dt3', 'players3');"> Claim </button>
         </td>
         <td id = "dt3">
         </td>
+        <td id = "players3">
+        </td>
       </tr>
+  
   
     </table>
   </body>
