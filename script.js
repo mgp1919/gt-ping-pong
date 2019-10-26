@@ -26,10 +26,10 @@ function switchColor(id, bid, id2, id3) {
     document.getElementById(id2).innerHTML = null;
     document.getElementById(id3).innerHTML = null;
   } else {
+    alert(id3);
     button.innerText = "Reopen";
     elem.style.backgroundColor = "red";
     document.getElementById(id2).innerHTML = new Date().toLocaleTimeString();
-    alert(id3);
   }
   
   var button = document.getElementById(bid);
@@ -39,8 +39,8 @@ function switchColor(id, bid, id2, id3) {
 
 
 function alert(id) {
-  var person = prompt("Please enter your name:", "");
-  if (person != null || person != "") {
+  var person = prompt("Please enter your name:");
+  if (person != null) {
     document.getElementById(id).innerHTML = "Player 1: " + person;
   } else {
     prompt("Please enter your name:", "");
