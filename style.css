@@ -9,7 +9,8 @@ h1 {
   font-style: bold;
   font-style: italic;
   color: #d4af37;
-  display: inline;
+  
+  text-align: center; 
 }
 
 table,th,td {
