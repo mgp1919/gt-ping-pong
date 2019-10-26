@@ -14,15 +14,15 @@
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
     <div class="w3-container w3-blue">
+      <img style="float: left; margin: 30px 15px 15px 0px;" src="https://cdn.pixabay.com/photo/2014/04/03/11/36/ping-pong-311935_1280.png" width="50" />
+      <img style="float: right; margin: 30px 15px 15px 0px;" src="https://cdn.pixabay.com/photo/2014/04/03/11/36/ping-pong-311935_1280.png" width="50" />
       <h1>GT Ping Pong</h1>
     </div>
     <div class = "second">
-    <h1><img src = "https://cdn.pixabay.com/photo/2014/04/03/11/36/ping-pong-311935_1280.png" alt="Ping pong paddle" style ="width:2em">
-    </h1> 
     </div>
   </head>  
   <body>
-    <table class = "w3-striped w3-hoverable" id = "table">
+    <table width = '100' class = "w3-striped w3-hoverable" id = "table">
       <tr class="w3-blue">
         <th>Location</th>
         <th id>Status</th>
@@ -32,7 +32,7 @@
       <tr>
         <td>GT Connector</td>
         <td id = "id1">
-          <button class="w3-button w3-round-xxlarge" id = "b1" onclick="switchColor('id1', 'b1', 'dt1'); setTime(id); alert(players1)"> Claim </button>
+          <button class="w3-button w3-round-xxlarge" id = "b1" onclick="switchColor('id1', 'b1', 'dt1', 'players1')"> Claim </button>
         </td>
         <td id = "dt1">
         </td>
