@@ -49,7 +49,6 @@ function myTimer() {
 
 
 function setDate() {
-  var now = new Date();
   document.getElementById('date_and_time').innerHTML= new Date();
   
 }
