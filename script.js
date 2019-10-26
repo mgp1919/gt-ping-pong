@@ -17,6 +17,20 @@ function changeColor2(newColor, id) {
   elem.style.backgroundColor = "green";
 }
 
+function switchColor(id, bid) {
+  var elem = document.getElementById(id);
+  var button = document.getElementById(bid);
+  if (elem.style.backgroundColor == "green") {
+    
+  }
   
+  var button = document.getElementById(bid);
+  (button.innerText == "Open")
+}
+
+function getTimeStamp() {
+  var now = new Date();
+  return((now.getMonth() + 1) + '/' + (now.getDate()) + '/' + now.getFullYear() + " " + now.getHours() + ':' + ((now.getMinutes())))
+}
 
 
