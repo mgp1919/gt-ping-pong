@@ -31,24 +31,16 @@ function switchColor(id, bid) {
   var button = document.getElementById(bid);
   (button.innerText == "Open")
 }
-function toggle(id) {
-var startTimer = setInterval(myTimer, 1000);
-var timerElement = document.getElementById("date_and_time");
-var buttonElement = document.getElementbyId(id); 
-function myTimer() {
-  var current = new Date();
-  timerElement.innerHTML= current.toLocaleTimeString();
+
+function startTimer() {
+    var time = 0;
+    time=time+1;
+    elem1.innerHTML='start in ' + time + ' seconds'; //Update span inner HTML
+    setTimeout(startTimer,1000);
+    console.log(time);
 }
-  if (startTimer) {
-    clearInterval(startTimer);
-    startTimer = null;
-    buttonElement.innerHTML = 
-  }
-}
-
-
-
 function setDate() {
+  var now = new Date();
   document.getElementById('date_and_time').innerHTML= new Date();
   
 }
