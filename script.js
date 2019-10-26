@@ -40,10 +40,9 @@ function switchColor(id, bid, id2, id3) {
 
 function alert(id) {
   var person = prompt("Please enter your name:");
-  if (person != null) {
-    document.getElementById(id).innerHTML = "Player 1: " + person;
-  } else {
-    prompt("Please enter your name:", "");
+  var person2 = prompt("Please enter the second player:");
+  if(person != "" && person2 != "") {
+    document.getElementById(id).innerHTML = "Player 1: " + person + "\n Player 2: " + person2;
   }
 }
 
