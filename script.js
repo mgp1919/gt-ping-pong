@@ -2,14 +2,19 @@
     to your site with Javascript */
 
 // prints "hi" in the browser's dev tools console
-console.log("here you go");
+
 function setButtonColor(_this) {
   _this.style.backgroundColor = "red";
 }
 
-function changeColor(newColor) {
+function changeColor1(newColor) {
   var elem = document.getElementById('id1');
   elem.style.backgroundColor = "red";
+}
+
+function changeColor2(newColor) {
+  var elem = document.getElementById('id1');
+  elem.style.backgroundColor = "green";
 }
 
   
