@@ -32,10 +32,19 @@ function switchColor(id, bid) {
   (button.innerText == "Open")
 }
 
-var start = Date.now();
-setInterval(function() {
-  document.getElementById('difference').innerHTML = Date.now() - start;
-}, 1000);
+function startTimer() {
+    var time = 0;
+    time=time+1;
+    elem1.innerHTML='start in ' + time + ' seconds'; //Update span inner HTML
+    setTimeout(startTimer,1000);
+    console.log(time);
+}
+function setDate() {
+  var now = new Date();
+  document.getElementById('date_and_time').innerHTML= new Date();
+  
+}
+
 
 
 
