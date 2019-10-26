@@ -3,8 +3,10 @@
 
 // prints "hi" in the browser's dev tools console
 console.log("here you go");
-function myFunction() {
-  document.getElementById("dropdown").classList.toggle("show");
+function setButtonColor(_this) {
+  _this.style.backgroundColor = "red";
+}
+
   
 
-}
+
