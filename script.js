@@ -23,23 +23,17 @@ function switchColor(id, bid, id2) {
   if (elem.style.backgroundColor == "red") {
     button.innerText = "Claim";
     elem.style.backgroundColor = "green";
-    
+    document.getElementById(id2).innerHTML = null;
   } else {
-    button.innerText = "Closed";
+    button.innerText = "Reopen";
     elem.style.backgroundColor = "red";
+    document.getElementById(id2).innerHTML = new Date().toLocaleTimeString();
   }
   
   var button = document.getElementById(bid);
   (button.innerText == "Claim")
 }
 
-function setTime(id) {
-  if(document.getElement(id).button.innerText.equals("Claim"))
-  document.getElementById(id).innerHTML = new Date().toLocaleTimeString();
-  else {
-    document.getElementById(id).innerHTML = null;
-  }
-}
 
 
 

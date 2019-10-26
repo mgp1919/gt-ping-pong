@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!css import>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <head>
     <title>GT Ping Pong</title>
     <meta charset="utf-8">
@@ -29,34 +31,33 @@
         <th>Location</th>
         <th id>Status</th>
         <th id>Time Taken</th>
+        <th id>Players</th>
       </tr>
       <tr>
         <td>GT Connector</td>
         <td id = "id1">
-          <button id = "b1" onclick="switchColor('id1', 'b1'); setTime(id)"> Claim </button>
+          <button class="w3-button" id = "b1" onclick="switchColor('id1', 'b1', 'dt1'); setTime(id)"> Claim </button>
         </td>
-        <td id = "date_and_time">
+        <td id = "dt1">
         </td>
       </tr>
     
       <tr>
         <td>CRC</td>
         <td id = "id2">
-          <button id = "b2" onclick="switchColor('id2', 'b2');"> Claim </button>
+          <button class="w3-button" id = "b2" onclick="switchColor('id2', 'b2','dt2');"> Claim </button>
         </td>
-        <td id = "date_and_time2">
+        <td id = "dt2">
         </td>
       </tr>
       
       <tr>
         <td>Matheson</td>
         <td id = "id3">
-          <button id = "b3" onclick="switchColor('id3', 'b3');"> Claim </button>
+          <button class="w3-button" id = "b3" onclick="switchColor('id3', 'b3','dt3');"> Claim </button>
         </td>
-      </tr>
-      
-      <tr>
-        
+        <td id = "dt3">
+        </td>
       </tr>
       
     </table>
