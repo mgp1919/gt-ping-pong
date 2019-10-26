@@ -42,8 +42,7 @@ function myTimer() {
   if (startTimer) {
     clearInterval(startTimer);
     startTimer = null;
-  } else {
-    startTimer = setInterval(myTimer, 1000);
+    buttonElement.innerHTML = 
   }
 }
 
@@ -51,7 +50,7 @@ function myTimer() {
 
 function setDate() {
   var now = new Date();
-  document.getElementById('date_and_time').innerHTML = new Date.toLocaleTimeString();
+  document.getElementById('date_and_time').innerHTML= new Date();
   
 }
 
