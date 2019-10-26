@@ -12,5 +12,21 @@ h1 {
   display: inline;
 }
 
+table,th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
 
+th,td {
+  padding: 15px;
+  text-align: left;
+  height: 50px;
+}
+td{
+  height: 50px;
+  vertical-align: bottom;
+}
 
+table {
+  width = 100%;
+}
