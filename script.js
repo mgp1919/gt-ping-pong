@@ -30,8 +30,7 @@ function switchColor(id, bid, id2, id3) {
     if(cont == true) {
       button.innerText = "Reopen";
       elem.style.backgroundColor = "red";
-      // document.getElementById(id2).innerHTML = new Date().toLocaleTimeString();
-      document.getElementById(id2).innerHTML = 0000
+      document.getElementById(id2).innerHTML = new Date().toLocaleTimeString();
     }
 
   }
